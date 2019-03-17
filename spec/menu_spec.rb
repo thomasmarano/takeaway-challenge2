@@ -27,11 +27,4 @@ describe Menu do
     end
   end
 
-  describe '#confirm_price' do
-    it 'calculates the price of a dish given quantity' do
-      @menu.add_item(@dish, 5)
-      @menu.add_item(@second_dish, 4)
-      expect(@menu.confirm_price(@dish, 2)).to eq(10)
-    end
-  end
 end
